@@ -27,7 +27,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace = "com.noelle.counter"
+    namespace = "com.example.counter"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 

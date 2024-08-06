@@ -46,4 +46,14 @@ app.*.map.json
 /android/app/google-services.json
 /firebase.json
 /lib/firebase_options.dart
-/ios/Runner/GoogleService-Info.plist
+\ios\Runner\GoogleService-Info .plist
+
+# macOS specific
+*.DS_Store
+*.AppleDouble
+.AppleDesktop/
+.DS_Store
+.DocumentRevisions-V100/
+.fseventsd/
+.localized
+.Trashes/
