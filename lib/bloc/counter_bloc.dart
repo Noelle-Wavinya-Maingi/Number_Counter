@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:counter/bloc/counter_event.dart';
-import 'package:counter/bloc/counter_state.dart';
+import 'package:number_counter/bloc/counter_event.dart';
+import 'package:number_counter/bloc/counter_state.dart';
+
 
 //State manager of the counter and its event handlers.
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
@@ -14,9 +15,9 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
     on<IncrementCounter>((event, emit) async {
       final currentCounter = state.counterValue + 1;
       await _firestore
-          .collection('counters')
+          .collection('number_counters')
           .doc(documentId)
-          .set({'value': currentCounter});
+          .set({'noelle_value': currentCounter});
       emit(CounterState(counterValue: currentCounter));
     });
     _initializeCounter();
@@ -24,11 +25,11 @@ class CounterBloc extends Bloc<CounterEvent, CounterState> {
 
   // Fetches the counter value from firestore and emits the corresponding state
   Future<void> _initializeCounter() async {
-    final doc = await _firestore.collection('counters').doc(documentId).get();
+    final doc = await _firestore.collection('number_counters').doc(documentId).get();
     if (doc.exists) {
-      emit(CounterState(counterValue: doc['value']));
+      emit(CounterState(counterValue: doc['noelle_value']));
     } else {
-      await _firestore.collection('counters').doc(documentId).set({'value': 0});
-    }so 
+      await _firestore.collection('number_counters').doc(documentId).set({'noelle_value': 0});
+    };
   }
 }

@@ -1,6 +1,6 @@
 {
-    "name": "counter",
-    "short_name": "counter",
+    "name": "number_counter",
+    "short_name": "number_counter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

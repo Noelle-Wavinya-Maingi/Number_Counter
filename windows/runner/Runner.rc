@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.noelle" "\0"
-            VALUE "FileDescription", "counter" "\0"
+            VALUE "CompanyName", "com.example" "\0"
+            VALUE "FileDescription", "number_counter" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "counter" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.noelle. All rights reserved." "\0"
-            VALUE "OriginalFilename", "counter.exe" "\0"
-            VALUE "ProductName", "counter" "\0"
+            VALUE "InternalName", "number_counter" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "number_counter.exe" "\0"
+            VALUE "ProductName", "number_counter" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
