@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "105438638257",
+    "firebase_url": "https://counter-2a631-default-rtdb.firebaseio.com",
+    "project_id": "counter-2a631",
+    "storage_bucket": "counter-2a631.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105438638257:android:9e5cbf9932fb220bd73290",
+        "android_client_info": {
+          "package_name": "com.noelle.counter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLbvWfAVJU35S13vHQjV9nG8Rg9VrErLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
